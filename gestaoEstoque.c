@@ -16,7 +16,7 @@ somaPreco+= preco;
     return somaQuantidade;
 }
 
-float estoqueConsulta (int somaQuantidade, float somaPreco) {
+void estoqueConsulta (int somaQuantidade, float somaPreco) {
 
 printf("Quantidade de produto %d\n", somaQuantidade);
 
@@ -26,7 +26,7 @@ printf("Preco do Material %f\n", somaPreco);
 
 }
 
-float retirada (int somaQuantindade, int retirar) {
+float retirada (float somaQuantindade, int retirar) {
 
   float somaQuantidade;
 
@@ -35,7 +35,7 @@ float retirada (int somaQuantindade, int retirar) {
 
 }
 
-char *datadevenda(char *data) {
+void datadevenda(char *data) {
 
 printf("Ultima data de retirada do produto %s", data);
 
@@ -55,7 +55,7 @@ printf("-----TABELA-----\n");
 printf("1 - Deposito\n");
 printf("2 - Consultar quantidade e preco\n");
 printf("3 - Retirar\n");
-printf("4 - Adicionar data que o produto foi retirado pela ˙ltima vez\n");
+printf("4 - Adicionar data que o produto foi retirado pela √∫ltima vez\n");
 printf("5 - Sair do programa\n");
 
 
@@ -68,7 +68,7 @@ int quantidade;
 float somaQuantidade;
 char data[50];
 
-printf("Informe uma opÁ„o");
+printf("Informe uma op√ß√£o");
 scanf("%d", &opcao);
 
 switch (opcao)
@@ -78,7 +78,7 @@ switch (opcao)
     printf("Informe a quantidade que deseja adicionar");
     scanf("%d", &quantidade); 
 
-     printf("Informe o preÁo por unidade do produto");
+     printf("Informe o pre√ßo por unidade do produto");
     scanf("%f", &preco); 
      
     fflush(stdin);
@@ -109,7 +109,7 @@ switch (opcao)
     case 4:
     
     
-    printf("Informe a data que foi retirada o ˙ltimo produto");
+    printf("Informe a data que foi retirada o √∫ltimo produto");
     gets(data);
      
    fflush(stdin);
@@ -121,7 +121,7 @@ switch (opcao)
      break;
 
 default: 
-    printf("OP«√O INV¡LIDA");
+    printf("OP√á√ÉO INV√ÅLIDA");
     break;
 
 }
